@@ -26,7 +26,7 @@ namespace BloodBank1.Controllers
         }
         //GET ALL DATA FROM DB
         [HttpGet]
-        [AllowAnonymous]
+        [Authorize]
         public List<BloodDetailsResultDto> Get()
         {
             try
